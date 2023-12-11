@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=3, initial-scale=1.0">
+    <title>Quotes App</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="quote">
+        <div class="head">
+            <h1 class="main-title">Quote of the Day</h1>
+            <p>Press the button below to recieve a random quote!</p>
+        </div>
+        <div class="quote-area">
+            <i class="fa-solid fa-quote-left" id="quoteLeft"></i>
+            <p id="quotesOutput"></p>
+            <i class="fa-solid fa-quote-right" id="quoteRight"></i>
+        </div>
+        <div class="author">
+            <span id="quoteLine"></span>
+            <p id="quotesAuthor"></p>
+        </div>
+        <div class="buttons">
+            <ul class="social">
+                <li><a href="#"><i class="fa-solid fa-volume-high"></i></a></li>
+                <li id="copyBtn" onclick="copyBtn()"><a href="#"><i class="fa-solid fa-copy"></i></a></li>
+                <li><a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            </ul>
+            <button onclick="changeQuotes(); hideElement();">New Quote</button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
